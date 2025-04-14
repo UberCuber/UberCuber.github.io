@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Text Analyzer | Krrish Gupta</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="text-analyzer.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <div class="container">
+      <div class="nav-brand">Krrish Gupta</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html#about">About Me</a></li>
+        <li><a href="index.html#city">My City</a></li>
+        <li><a href="index.html#education">Education</a></li>
+        <li><a href="index.html#skills">Tools</a></li>
+        <li><a href="assets/CV - Krrish Gupta.pdf" target="_blank">Resume</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="header">
+    <div class="container">
+      <h1>Text Analyzer</h1>
+    </div>
+  </header>
+
+  <section class="analyzer">
+    <div class="container">
+      <div class="analyzer-input-section">
+        <textarea id="textInput" class="text-input" placeholder="Enter text here. Upto 10,000 words supported"></textarea>
+        
+        <div class="buttons">
+          <button id="analyzeBtn" class="btn-analyze">
+            <i class="fas fa-search"></i> Analyze Text
+          </button>
+        </div>
+      </div>
+      
+      <div id="results" class="results-container" style="display: none;">
+        <div class="results-section basic-stats">
+          <h3>Basic Stats</h3>
+          <div class="results-grid">
+            <div class="result-item">
+              <div id="letterCount" class="count">0</div>
+              <div class="label">Letters</div>
+            </div>
+            <div class="result-item">
+              <div id="wordCount" class="count">0</div>
+              <div class="label">Words</div>
+            </div>
+            <div class="result-item">
+              <div id="spaceCount" class="count">0</div>
+              <div class="label">Spaces</div>
+            </div>
+            <div class="result-item">
+              <div id="newlineCount" class="count">0</div>
+              <div class="label">Newlines</div>
+            </div>
+            <div class="result-item">
+              <div id="specialCount" class="count">0</div>
+              <div class="label">Special Symbols</div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="results-section">
+          <h3>Pronouns Analysis</h3>
+          <div class="table-container">
+            <table id="pronounsTable">
+              <thead>
+                <tr>
+                  <th>Pronoun</th>
+                  <th>Count</th>
+                </tr>
+              </thead>
+              <tbody>
+                <!-- Will be filled with JavaScript -->
+              </tbody>
+            </table>
+          </div>
+        </div>
+        
+        <div class="results-section">
+          <h3>Prepositions Analysis</h3>
+          <div class="table-container">
+            <table id="prepositionsTable">
+              <thead>
+                <tr>
+                  <th>Preposition</th>
+                  <th>Count</th>
+                </tr>
+              </thead>
+              <tbody>
+                <!-- Will be filled with JavaScript -->
+              </tbody>
+            </table>
+          </div>
+        </div>
+        
+        <div class="results-section">
+          <h3>Articles Analysis</h3>
+          <div class="table-container">
+            <table id="articlesTable">
+              <thead>
+                <tr>
+                  <th>Article</th>
+                  <th>Count</th>
+                </tr>
+              </thead>
+              <tbody>
+                <!-- Will be filled with JavaScript -->
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>&copy; 2025 Krrish Gupta. All rights reserved.</p>
+  </footer>
+
+  <script src="text-analyzer.js"></script>
+</body>
+</html>
